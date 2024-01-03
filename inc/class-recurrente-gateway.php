@@ -84,10 +84,15 @@ class Recurrente_Gateway extends WC_Payment_Gateway {
 
 		$this->title = $this->get_option('title');
 		$this->description = $this->get_option('description');
+		
 		$this->enabled = $this->get_option('enabled');
 		$this->order_status = $this->get_option('order_status');
 		$this->access_key = $this->get_option('access_key');
 		$this->secret_key = $this->get_option('secret_key');
+		$this->trescuotas = $this->get_option('trescuotas');
+		$this->seiscuotas = $this->get_option('seiscuotas');
+		$this->docecuotas = $this->get_option('docecuotas');
+		$this->dieciochocuotas = $this->get_option('dieciochocuotas');
 		$this->debug = 'yes' === $this->get_option('debug', 'no');
 		$this->error_msg = $this->get_option('error_msg');
 		self::$log_enabled = $this->debug;
